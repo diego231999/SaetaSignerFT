@@ -1,0 +1,50 @@
+.combo-box {
+    -fx-background-color: #E9EDED;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-effect: null;
+    -fx-font-size: 12px;
+}
+.combo-box:hover{
+    -fx-cursor: hand;
+}
+.combo-box-popup .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #212121;
+    -fx-pref-width: 50px;
+    fx-effect: null;
+    -fx-font-size: 12px;
+}
+.combo-box-popup .list-cell:hover{
+    -fx-cursor: hand;
+}
+.text-input{
+    -fx-background-color: #E9EDED;
+    -fx-border-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-effect: null;
+    -fx-font-size: 12px;
+}
+.text-input{
+    -fx-cursor: text;
+}
+
+.check-box{
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-background-color: #E9EDED;
+    -fx-border-color: transparent;
+    -fx-effect: null;
+}
+
+.check-box > .box {
+    -fx-padding: 2px 2px 3px 3px ;
+    -fx-background-color: #E9EDED;
+    -fx-border-color:transparent;
+    -fx-border-radius:3px;
+}
+.check-box > .box > .mark {
+    -fx-padding: 5px 5px 6px 6px;
+}

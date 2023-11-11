@@ -1,0 +1,9 @@
+.background{
+    -fx-background-image: url("../img/SplashBackground.png");
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, .6, 0.0, 0.0);
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainWindow" prefHeight="668.0" prefWidth="1118.0" styleClass="bg-transparent" stylesheets="@css/MainStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saeta.saetasigner.controller.FirmaController">
+    <children>
+        <AnchorPane fx:id="plataformaPane" layoutX="323.0" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="471.0" AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="324.0" AnchorPane.topAnchor="152.0">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <DialogPane fx:id="certficadoPlataformaContent1" prefHeight="276.0" prefWidth="470.0" styleClass="bg-gray-dark-2">
+                    <padding>
+                        <Insets left="100.0" top="300.0" />
+                    </padding>
+                    <header>
+                        <GridPane prefHeight="421.0" prefWidth="396.0" scaleX="1.2" translateX="-40.0" translateY="-280.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane maxHeight="40.0" minHeight="20.0" onMouseDragged="#onMouseDraged" onMousePressed="#onMousePressed" prefHeight="40.0" prefWidth="397.0" scaleY="0.9" translateX="-2.5" translateY="-215.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <StackPane maxHeight="30.0" minHeight="30.0" onMouseClicked="#onMinimize" prefHeight="30.0" style="-fx-cursor: hand;" styleClass="windows-btn" translateX="50.0" translateY="-7.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                            <children>
+                                                <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@img/Minimize.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </StackPane>
+                                        <StackPane maxHeight="30.0" minHeight="30.0" onMouseClicked="#onClose2" prefHeight="30.0" style="-fx-cursor: hand;" styleClass="close-btn" translateY="-7.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                            <children>
+                                                <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@img/Close.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </StackPane>
+                                        <FlowPane alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0" styleClass="topbar" GridPane.valignment="CENTER">
+                                            <children>
+                                                <ImageView fitHeight="32.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                                    <FlowPane.margin>
+                                                        <Insets left="5.0" right="15.0" />
+                                                    </FlowPane.margin>
+                                                    <image>
+                                                        <Image url="@img/LOGO%20SSIGNER_1.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </FlowPane>
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="bg-white" />
+                                        <String fx:value="topbar" />
+                                    </styleClass>
+                                    <effect>
+                                        <DropShadow blurType="GAUSSIAN" height="10.0" offsetY="1.0" radius="2.0" width="0.0">
+                                            <color>
+                                                <Color opacity="0.25" />
+                                            </color>
+                                        </DropShadow>
+                                    </effect>
+                                    <GridPane.margin>
+                                        <Insets left="-17.0" right="-5.0" />
+                                    </GridPane.margin>
+                                    <padding>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </padding>
+                                </GridPane>
+                                <Label fx:id="textoPlataforma" prefHeight="33.0" prefWidth="599.0" text="Certificados" textFill="#212121">
+                                    <styleClass>
+                                        <String fx:value="font" />
+                                        <String fx:value="title" />
+                                        <String fx:value="w-700" />
+                                    </styleClass>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="10.0" />
+                                    </padding>
+                                    <GridPane.margin>
+                                        <Insets left="-15.0" top="-310.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <StackPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" style="-fx-cursor: hand;" translateX="-340.0" translateY="-50.0">
+                                    <children>
+                                        <ImageView fx:id="imagenRefresh" fitHeight="27.0" fitWidth="24.0" onMouseClicked="#onCertificadoPlataformaClicked" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icono-refresh.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets left="330.0" right="10.0" />
+                                    </GridPane.margin>
+                                </StackPane>
+                                <ComboBox fx:id="certificadoPlataformaComboBox" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="317.0" scaleY="1.3" styleClass="bg-white" translateX="5.0" translateY="-50.0" visibleRowCount="11">
+                                    <GridPane.margin>
+                                        <Insets left="25.0" />
+                                    </GridPane.margin>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </ComboBox>
+
+                                <Button fx:id="firmarBtn1" alignment="CENTER" contentDisplay="CENTER" maxHeight="40.0" maxWidth="90.0" minHeight="25.0" minWidth="86.0" mnemonicParsing="false" onAction="#onSignPdf" prefHeight="50.0" prefWidth="110.0" style="-fx-cursor: hand;" text="Firmar" textFill="WHITE" translateX="-25.0" translateY="-40.0">
+                                    <styleClass>
+                                        <String fx:value="bg-orange" />
+                                        <String fx:value="font" />
+                                        <String fx:value="w-700" />
+                                        <String fx:value="btn" />
+                                    </styleClass>
+                                    <GridPane.margin>
+                                        <Insets left="280.0" top="220.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Button fx:id="cancelarButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="40.0" maxWidth="90.0" minHeight="25.0" minWidth="86.0" mnemonicParsing="false" onMouseClicked="#onClose2" prefHeight="50.0" prefWidth="110.0" style="-fx-cursor: hand;" text="Cancelar" textFill="WHITE" translateX="-5.0" translateY="-40.0">
+                                    <styleClass>
+                                        <String fx:value="bg-red" />
+                                        <String fx:value="font" />
+                                        <String fx:value="w-700" />
+                                        <String fx:value="btn" />
+                                    </styleClass>
+                                    <GridPane.margin>
+                                        <Insets left="15.0" top="220.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <ImageView fx:id="archivoLoader3" fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" translateX="320.0" translateY="-150.0" visible="false">
+                                    <image>
+                                        <Image url="@img/gifs/gif-loading.gif" />
+                                    </image>
+                                </ImageView>
+                        <Label fx:id="textoPlataforma1" prefHeight="26.0" prefWidth="136.0" style="-fx-font-size: 12;" text="Un producto de " textFill="#1a00ffd4">
+                           <styleClass>
+                              <String fx:value="font" />
+                              <String fx:value="title" />
+                              <String fx:value="w-600" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets top="245.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/LOGO_SAETA_-_SIN_FONDO.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="88.0" right="50.0" top="245.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                            </children>
+                        </GridPane>
+                    </header>
+                </DialogPane>
+                <StackPane fx:id="succesAlert1" prefHeight="40.0" prefWidth="200.0" translateX="470.0" translateY="80.0" visible="false">
+                    <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="bg-white" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="5.0" prefWidth="5.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                    <image>
+                                        <Image url="@img/success.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fx:id="successAlertMessage1" strokeType="OUTSIDE" strokeWidth="0.0" text="Se ha firmado el archivo coreectamente" wrappingWidth="165.0" GridPane.columnIndex="3">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Text>
+                                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                    <styleClass>
+                                        <String fx:value="bg-success" />
+                                        <String fx:value="success-bar" />
+                                    </styleClass>
+                                </StackPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+                <StackPane fx:id="errorAlert1" prefHeight="40.0" prefWidth="200.0" translateX="470.0" translateY="80.0" visible="false">
+                    <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="bg-white" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="5.0" prefWidth="5.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                    <image>
+                                        <Image url="@img/error.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fx:id="errorAlertMessage1" strokeType="OUTSIDE" strokeWidth="0.0" text="Se ha firmado el archivo correctamente" wrappingWidth="165.0" GridPane.columnIndex="3">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Text>
+                                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                    <styleClass>
+                                        <String fx:value="bg-error" />
+                                        <String fx:value="success-bar" />
+                                    </styleClass>
+                                </StackPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

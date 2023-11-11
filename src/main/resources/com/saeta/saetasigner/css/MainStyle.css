@@ -1,0 +1,130 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+*/
+@import url("FirmaStyle.css");
+
+.bg-white{
+    -fx-background-color: #FFFFFF;
+}
+.bg-white-60{
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+}
+.bg-gray{
+    -fx-background-color: #F5F5F5;
+}
+.bg-orange{
+    -fx-background-color: #ff9900;
+}
+.bg-blue{
+    -fx-background-color: #00539A;
+}
+.bg-gray-dark{
+    -fx-background-color: #E9EDED;
+}
+.bg-gray-dark-2{
+    -fx-background-color: #C4C4C4;
+}
+.bg-green{
+    -fx-background-color: #06BA63;
+}
+.bg-red{
+    -fx-background-color: #FE4A49;
+}
+.bg-transparent{
+    -fx-background-color: transparent;
+}
+.bg-success{
+    -fx-background-color: #0CCA4A;
+}
+.bg-error{
+    -fx-background-color: #FE4A49;
+}
+.border-orange{
+    -fx-border-color: #ff9900;
+}
+.border-blue{
+    -fx-border-color: #00539A;
+}
+.shadow{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, .6, 0.0, 0.0);
+}
+.drop-shadow{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, .6, 0.0, 3);
+}
+.font{
+    -fx-font-family: 'Merriweather Sans', sans-serif;
+}
+.title{
+    -fx-font-size: 16px;
+}
+.btn{
+    -fx-border-radius: 14px;
+    -fx-background-radius: 14px;
+}
+
+.w-400{
+    -fx-font-weight: 400;
+}
+.w-500{
+    -fx-font-weight: 500;
+}
+.w-600{
+    -fx-font-weight: 600;
+}
+.w-700{
+    -fx-font-weight: 700;
+}
+.input{
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(133,133,133, 0.6);
+}
+.input:focused{
+    -fx-border-color: #00539A;
+}
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.main-background{
+    -fx-background-image: url("../img/Background.png");
+    -fx-background-position: right;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+.card{
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.topbar{
+    -fx-border-radius: 6px 6px 0 0;
+    -fx-background-radius: 6px 6px 0 0;
+}
+.info-cert{
+    -fx-font-weight: 600;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Merriweather Sans', sans-serif;
+}
+.cursor-hand{
+    -fx-cursor: hand;
+}
+.close-btn{
+    -fx-border-radius: 0 6px 0 0;
+    -fx-background-radius: 0 6px 0 0;
+}
+.close-btn:hover{
+    -fx-background-color: #E81123;
+    -fx-background-radius: 0 6px 0 0;
+}
+.windows-btn:hover{
+    -fx-background-color: #E9EDED;
+}
+.success-bar{
+    -fx-border-radius: 6px 0 0 6px;
+    -fx-background-radius: 6px 0 0 6px;
+}
+.navbar-selector{
+    -fx-border-radius: 0 2px 2px 0;
+    -fx-background-radius: 0 2px 2px 0;
+}

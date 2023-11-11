@@ -1,0 +1,16 @@
+<configuration>
+
+    <property name="LOG_PATH" value="C:/Users/${user.name}" />
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>C:/SSFD_FT/log/application.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
+
